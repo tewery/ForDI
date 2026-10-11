@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fffaf6">
+    <title>Человек, который стал другом 🧡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-decoration decoration-one"></div>
+    <div class="background-decoration decoration-two"></div>
+
+    <header class="topbar">
+        <a href="#" class="logo">на память <span>♡</span></a>
+        <a href="#memories" class="top-link">Наши моменты ↗</a>
+    </header>
+
+    <main>
+        <!-- ГЛАВНЫЙ ЭКРАН -->
+        <section class="hero">
+            <div class="hero-label">
+                <span class="status-dot"></span>
+                Немного важных воспоминаний
+            </div>
+
+            <div class="hero-content">
+                <p class="eyebrow">Не только учитель. Гораздо больше.</p>
+
+                <h1>
+                    Есть люди,<br>
+                    которые остаются<br>
+                    <span>в сердце.</span> <br> <span> FOR DI </span>
+                </h1>
+
+                <p class="hero-description">
+                    Этот маленький сайт — для человека,
+                    который когда-то был моим учителем географии,
+                    а со временем стал мне настоящим другом.
+                </p>
+
+                <a href="#memories" class="primary-button">
+                    Перейти к воспоминаниям
+                    <span>↓</span>
+                </a>
+            </div>
+
+            <div class="hero-bottom">
+                <span>Немного тепла в цифровом мире</span>
+                <span>Сделано от души <span class="orange">♥</span></span>
+            </div>
+        </section>
+
+        <!-- ТЁПЛЫЕ СЛОВА -->
+        <section class="intro section reveal" id="about">
+            <div class="section-number">01 / НЕСКОЛЬКО СЛОВ</div>
+
+            <div class="intro-content">
+                <span class="small-orange">Для особенного человека</span>
+
+                <h2>
+                    Иногда самые важные люди
+                    появляются в нашей жизни
+                    <span>совсем неожиданно.</span>
+                </h2>
+
+                <p>
+                    Когда-то всё начиналось с уроков географии.
+                    Но со временем это стало чем-то большим.
+                    Появились общие моменты, шутки, разговоры
+                    и воспоминания, которые хочется сохранить.
+                </p>
+
+                <p>
+                    И мне захотелось собрать хотя бы маленькую
+                    часть всего этого в одном месте.
+                    Чтобы можно было открыть страницу,
+                    улыбнуться и вспомнить что-нибудь хорошее.
+                </p>
+
+                <div class="signature">
+                    <span class="signature-line"></span>
+                    С теплом и благодарностью <span class="orange">♥</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- МУЗЫКА -->
+        <section class="music-section section reveal" id="music">
+            <div class="section-number">02 / НАША МУЗЫКА</div>
+
+            <div class="music-card">
+                <div class="music-cover">
+                    <div class="cover-circle circle-one"></div>
+                    <div class="cover-circle circle-two"></div>
+                    <div class="cover-center">♫</div>
+                    <span class="cover-caption">A LITTLE MEMORY</span>
+                </div>
+
+                <div class="music-info">
+                    <span class="small-orange">Одна песня. Много воспоминаний.</span>
+                    <h2>Пусть играет наша песня</h2>
+                    <p>
+                        Иногда музыка может сказать больше,
+                        чем длинные сообщения.
+                    </p>
+
+                    <audio id="song" preload="metadata">
+                        <source src="nasha_pesnya.mp3" type="audio/mpeg">
+                        Ваш браузер не поддерживает воспроизведение аудио.
+                    </audio>
+
+                    <div class="player">
+                        <button class="play-button" id="playButton"
+                                type="button" aria-label="Воспроизвести песню">
+                            ▶
+                        </button>
+
+                        <div class="track">
+                            <div class="track-top">
+                                <span id="songStatus">Ваша песня</span>
+                                <span id="songTime">0:00 / 0:00</span>
+                            </div>
+
+                            <input
+                                type="range"
+                                id="progress"
+                                min="0"
+                                max="100"
+                                value="0"
+                                step="0.1"
+                                aria-label="Позиция воспроизведения"
+                            >
+
+                            <div class="track-bottom">
+                                <span>Нажми и слушай 🧡</span>
+                                <span class="music-note">♪ ♫ ♪</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="music-hint" id="musicHint">
+                        Если музыка не запускается, проверь файл в папке music.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- КВН -->
+        <section class="gallery-section section reveal" id="memories">
+            <div class="section-number">03 / НАШ КВН</div>
+
+            <div class="gallery-heading">
+                <div>
+                    <span class="small-orange">Смех, эмоции и команда</span>
+                    <h2>Наш КВН 🎭</h2>
+                </div>
+                <p>Те самые моменты, которые хочется пересматривать.</p>
+            </div>
+
+            <div class="photo-grid">
+                <figure class="photo-card photo-tall">
+                    <img src="/photo4.jpg" alt="Первый момент с КВН">
+                    <figcaption>
+                        <span>01</span>
+                        <span>Наш КВН</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="photo-card photo-short">
+                    <img src=".photo3.jpg" alt="Второй момент с КВН">
+                    <figcaption>
+                        <span>02</span>
+                        <span>Команда и эмоции</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ФОТО-МОМЕНТЫ -->
+        <section class="gallery-section section reveal" id="photos">
+            <div class="section-number">04 / ФОТО-МОМЕНТЫ</div>
+
+            <div class="gallery-heading">
+                <div>
+                    <span class="small-orange">Маленькие истории</span>
+                    <h2>То, что хочется сохранить.</h2>
+                </div>
+                <p>Четыре фотографии не расскажут всего, но сохранят частичку нашей истории.</p>
+            </div>
+
+            <div class="photo-grid moments-grid">
+                <figure class="photo-card photo-short">
+                    <img src="photo2.jpg" alt="Наш первый фотомомент">
+                    <figcaption>
+                        <span>03</span>
+                        <span>Тёплые воспоминания</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="photo-card photo-tall">
+                    <img src="./photo1.jpg" alt="Наш второй фотомомент">
+                    <figcaption>
+                        <span>04</span>
+                        <span>И это тоже часть истории</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ФИНАЛ -->
+        <section class="final-section reveal">
+            <div class="final-heart">♡</div>
+
+            <span class="small-orange">И напоследок</span>
+
+            <h2>
+                Спасибо за то,<br>
+                что Вы есть.
+            </h2>
+
+            <p>
+                За поддержку, за искренность, за смех
+                и за моменты, которые стали особенными.
+                Пусть впереди будет ещё много хороших историй,
+                поводов улыбаться и тёплых воспоминаний.
+            </p>
+
+            <div class="final-signature">
+                С благодарностью, Ваш бывший ученик 🧡
+                Можете пожалуйста меня порекомендовать))
+            </div>
+
+            <a href="#top" class="back-to-top"
+               onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                Вернуться в начало ↑
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <span>Создано с теплом и благодарностью</span>
+        <span>© 2026 <span class="orange">♡</span></span>
+    </footer>
+
+    <script>
+        // МУЗЫКАЛЬНЫЙ ПЛЕЕР
+        const song = document.getElementById('song');
+        const playButton = document.getElementById('playButton');
+        const progress = document.getElementById('progress');
+        const songTime = document.getElementById('songTime');
+        const songStatus = document.getElementById('songStatus');
+        const musicHint = document.getElementById('musicHint');
+
+        function formatTime(seconds) {
+            if (!Number.isFinite(seconds)) return '0:00';
+
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = Math.floor(seconds % 60);
+
+            return minutes + ':' + String(remainingSeconds).padStart(2, '0');
+        }
+
+        playButton.addEventListener('click', async () => {
+            if (song.paused) {
+                try {
+                    await song.play();
+                    musicHint.textContent = 'Приятного прослушивания 🧡';
+                } catch (error) {
+                    musicHint.textContent =
+                        'Не удалось запустить песню. Проверь название и расположение MP3-файла.';
+                }
+            } else {
+                song.pause();
+            }
+        });
+
+        song.addEventListener('play', () => {
+            playButton.textContent = 'Ⅱ';
+            playButton.setAttribute('aria-label', 'Приостановить песню');
+            songStatus.textContent = 'Сейчас играет';
+        });
+
+        song.addEventListener('pause', () => {
+            playButton.textContent = '▶';
+            playButton.setAttribute('aria-label', 'Воспроизвести песню');
+            songStatus.textContent = 'Ваша песня';
+        });
+
+        song.addEventListener('loadedmetadata', updatePlayer);
+        song.addEventListener('timeupdate', updatePlayer);
+
+        function updatePlayer() {
+            const duration = song.duration || 0;
+            const current = song.currentTime || 0;
+
+            progress.max = duration || 100;
+            progress.value = current;
+
+            songTime.textContent =
+                formatTime(current) + ' / ' + formatTime(duration);
+        }
+
+        progress.addEventListener('input', () => {
+            if (Number.isFinite(song.duration)) {
+                song.currentTime = Number(progress.value);
+            }
+        });
+
+        song.addEventListener('ended', () => {
+            playButton.textContent = '▶';
+            songStatus.textContent = 'Наша песня';
+            progress.value = 0;
+        });
+
+        song.addEventListener('error', () => {
+            musicHint.textContent =
+                'Файл не найден или не поддерживается. Проверь папку music и имя файла.';
+        });
+
+        // ПЛАВНОЕ ПОЯВЛЕНИЕ СЕКЦИЙ ПРИ ПРОКРУТКЕ
+        const revealElements = document.querySelectorAll('.reveal');
+
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+
+            revealElements.forEach((element) => observer.observe(element));
+        } else {
+            revealElements.forEach((element) => element.classList.add('visible'));
+        }
+
+        // НЕБОЛЬШОЙ ЭФФЕКТ ПРИ НАВЕДЕНИИ НА ФОТО
+        document.querySelectorAll('.photo-card').forEach((card) => {
+            card.addEventListener('pointermove', (event) => {
+                const rect = card.getBoundingClientRect();
+                const x = (event.clientX - rect.left) / rect.width;
+                const y = (event.clientY - rect.top) / rect.height;
+
+                card.style.setProperty('--mouse-x', `${x * 100}%`);
+                card.style.setProperty('--mouse-y', `${y * 100}%`);
+            });
+        });
+    </script>
+
+</body>
+</html>
